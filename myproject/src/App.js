@@ -61,7 +61,7 @@ function App() {
   }, []
   );
 
-  const onViewProductDetal = (id) => {
+  const onViewProductDetail = (id) => {
     console.log("Id:", id);
 
     const selectedProduct = products.find((product) => product.id === id);
@@ -75,10 +75,10 @@ function App() {
       <Cart/>
       <ProductList
       products = {products}
-      onViewProductDetal = {onViewProductDetal}
+      onViewProductDetail = {onViewProductDetail}
       />
  
-      <ProductDetail/>
+      <ProductDetail selectedProduct={selectedProduct}/>
 
     </div>
   )
